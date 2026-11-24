@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BiyaHelp connects motorists with nearby verified mechanics for convenient roadside assistance.">
+  <title>BiyaHelp | Roadside Assistance, Just a Tap Away</title>
+  <style>
+    :root{--navy:#071225;--navy2:#0d1c34;--gold:#e0b34f;--cream:#f6f7fa;--muted:#aebbd0;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#172033;line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1100px,90%);margin:auto}
+    header{background:var(--navy);color:white;padding:18px 0}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:1.45rem;font-weight:800;letter-spacing:.3px}.brand span{color:var(--gold)}
+    nav ul{display:flex;gap:24px;list-style:none;padding:0;margin:0;color:#dce4f1;font-size:.95rem}
+    .hero{background:linear-gradient(120deg,#071225 0%,#102849 100%);color:white;padding:82px 0 88px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}
+    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+    h1{font-size:clamp(2.5rem,5vw,4.2rem);line-height:1.08;margin:14px 0 20px}
+    .hero p{color:#d4deec;font-size:1.12rem;max-width:610px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 21px;border-radius:8px;font-weight:700}
+    .primary{background:var(--gold);color:#101827}.secondary{border:1px solid #8796ad;color:white}
+    .visual{background:#142b4a;border:1px solid #304767;border-radius:24px;padding:28px;box-shadow:0 22px 55px #0005}
+    .phone{max-width:290px;margin:auto;background:#f8fafc;border-radius:28px;padding:17px;color:#14213a;border:7px solid #263b58}
+    .phone-top{font-weight:800;font-size:1.2rem}.phone-top span{color:#bb8b24}
+    .map{height:145px;margin:15px 0;background:linear-gradient(35deg,#dce9df,#eef2e6);border-radius:14px;position:relative;overflow:hidden}
+    .road{position:absolute;height:13px;width:130%;background:#fff;top:62px;left:-15px;transform:rotate(-24deg);box-shadow:0 0 0 2px #d4dce0}
+    .pin{position:absolute;top:38px;left:56%;font-size:2rem}
+    .service{background:white;border-radius:12px;padding:12px;margin-top:9px;box-shadow:0 3px 12px #15213a12;font-size:.85rem}
+    .service strong{display:block}.tag{color:#27764e;font-weight:700;font-size:.75rem}
+    section{padding:70px 0}.section-title{text-align:center;font-size:2rem;margin:0 0 12px;color:var(--navy)}
+    .sub{text-align:center;color:#657086;max-width:650px;margin:0 auto 38px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;padding:25px;border-radius:15px;box-shadow:0 8px 25px #14213a0d}
+    .icon{width:46px;height:46px;border-radius:12px;background:#fff4d8;display:grid;place-items:center;font-size:1.4rem;margin-bottom:15px}
+    .card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:#667085}
+    .how{background:#edf1f6}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .step{background:white;padding:23px;border-radius:14px}.num{color:#bd8b20;font-size:1.4rem;font-weight:800}
+    .cta{background:var(--navy2);color:white;text-align:center;padding:58px 20px;border-radius:20px}
+    .cta h2{font-size:2rem;margin:0 0 10px}.cta p{color:#d4deec;margin:0 auto 22px;max-width:650px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+    .contact p{color:#657086}.contact-box{background:white;padding:25px;border-radius:15px}
+    input,textarea{width:100%;padding:12px;margin:7px 0 13px;border:1px solid #d5dbe5;border-radius:8px;font:inherit}
+    button{border:0;cursor:pointer;font:inherit}
+    footer{background:var(--navy);color:#cbd5e1;padding:25px 0;text-align:center;font-size:.9rem}
+    footer strong{color:var(--gold)}
+    @media(max-width:760px){nav ul{display:none}.hero-grid,.contact{grid-template-columns:1fr}.visual{max-width:420px;margin:auto}.cards,.steps{grid-template-columns:1fr}.hero{padding:60px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#">Biya<span>Help</span></a>
+      <ul><li><a href="#features">Features</a></li><li><a href="#how">How It Works</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Roadside assistance made easier</div>
+        <h1>Breakdowns happen. Finding help should be easy.</h1>
+        <p>BiyaHelp connects vehicle owners with nearby verified mechanics and roadside assistance providers—so you can find help when you need it most.</p>
+        <div class="actions"><a class="btn primary" href="#how">Discover BiyaHelp</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+      </div>
+      <div class="visual" aria-label="Illustration of the BiyaHelp mobile app">
+        <div class="phone">
+          <div class="phone-top">Biya<span>Help</span></div>
+          <div style="font-size:.8rem;color:#64748b">Find nearby assistance</div>
+          <div class="map"><div class="road"></div><div class="pin">📍</div></div>
+          <div class="service"><span class="tag">VERIFIED PROVIDER</span><strong>Nearby mechanic</strong>Roadside repair assistance</div>
+          <div class="service"><span class="tag">REQUEST HELP</span><strong>Book a service</strong>Connect with a service provider</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="features">
+    <div class="wrap">
+      <h2 class="section-title">Help is closer than you think</h2>
+      <p class="sub">A convenient way for motorists to connect with service providers without searching through random contacts.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">📍</div><h3>Find Nearby Mechanics</h3><p>Discover mechanics and roadside assistance providers near your location.</p></article>
+        <article class="card"><div class="icon">🛡️</div><h3>Verified Providers</h3><p>Connect with service providers who have gone through the platform's verification process.</p></article>
+        <article class="card"><div class="icon">📲</div><h3>Request and Book</h3><p>Send an assistance request and arrange a service through one convenient app.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="how" id="how">
+    <div class="wrap">
+      <h2 class="section-title">How BiyaHelp works</h2>
+      <p class="sub">A simple process designed to make roadside assistance more convenient.</p>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><h3>Search</h3><p>Look for nearby mechanics and available assistance providers.</p></div>
+        <div class="step"><div class="num">02</div><h3>Request</h3><p>Choose a provider and submit your roadside assistance request.</p></div>
+        <div class="step"><div class="num">03</div><h3>Get Assistance</h3><p>Coordinate with the provider and get help with your vehicle concern.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap"><div class="cta">
+      <h2>Don't let a breakdown stop your journey.</h2>
+      <p>Find nearby verified mechanics and request roadside assistance with BiyaHelp.</p>
+      <a class="btn primary" href="#contact">Contact the BiyaHelp Team</a>
+    </div></div>
+  </section>
+  <section id="contact">
+    <div class="wrap contact">
+      <div><h2 class="section-title" style="text-align:left">Get in touch</h2><p>Interested in BiyaHelp or want to become a service provider? Send the team a message.</p><p><strong>Service area:</strong> District 1, Quezon City, Philippines</p><p><strong>Email:</strong> Add your team's official email address here</p><p><strong>Social media:</strong> Add your official BiyaHelp page link here</p></div>
+      <div class="contact-box">
+        <form id="contactForm">
+          <label for="name">Your name</label><input id="name" required placeholder="Enter your name">
+          <label for="email">Email address</label><input id="email" type="email" required placeholder="Enter your email">
+          <label for="message">Message</label><textarea id="message" rows="4" required placeholder="How can we help?"></textarea>
+          <button class="btn primary" type="submit">Prepare Message</button>
+          <p id="formNote" style="font-size:.8rem;color:#667085;margin-bottom:0">Demo form: connect this form to an email or form service before publishing for real inquiries.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>BiyaHelp</strong> — Your roadside assistance, just a tap away. <br>© 2026 BiyaHelp. Venture prototype.</div></footer>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name=document.getElementById('name').value;
+    const email=document.getElementById('email').value;
+    const message=document.getElementById('message').value;
+    const subject=encodeURIComponent('BiyaHelp inquiry from '+name);
+    const body=encodeURIComponent('Name: '+name+'\\nEmail: '+email+'\\n\\n'+message);
+    document.getElementById('formNote').textContent='Demo only: add your team email address in the page code to enable message delivery.';
+  });
+</script>
+</body>
+</html>

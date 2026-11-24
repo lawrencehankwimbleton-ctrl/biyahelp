@@ -1,2 +1,0 @@
-# biyahelp
-wadwani purpose
